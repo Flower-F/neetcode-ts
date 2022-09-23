@@ -1,0 +1,37 @@
+{
+  "name": "neetcode-ts",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "author": "Flower-F<https://github.com/flower-f>",
+  "description": "Neetcode solutions with TypeScript",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.cjs,.ts, --fix --quiet ./",
+    "test": "vitest"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flower-F/cloud-hooks.git"
+  },
+  "packageManager": "pnpm@7.11.0",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-define-config": "^1.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vitest": "^0.23.4"
+  },
+  "keywords": [
+    "neetcode",
+    "leetcode"
+  ]
+}
