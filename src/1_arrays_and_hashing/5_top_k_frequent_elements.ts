@@ -1,3 +1,5 @@
+// https://leetcode.cn/problems/top-k-frequent-elements/
+
 export function topKFrequent(nums: number[], k: number): number[] {
   const map = new Map<number, number>();
 
@@ -7,7 +9,7 @@ export function topKFrequent(nums: number[], k: number): number[] {
     maxSize = Math.max(maxSize, map.get(num) as number);
   });
 
-  // bucket sort
+  // 桶排序
   const bucket = new Array<number[] | undefined>();
   map.forEach((value, key) => {
     if (!bucket[value]) {
@@ -16,7 +18,6 @@ export function topKFrequent(nums: number[], k: number): number[] {
     bucket[value]?.push(key);
   });
 
-  // result
   const res = [];
   for (let i = maxSize; i >= 0 && res.length < k; i--) {
     if (bucket[i]) {

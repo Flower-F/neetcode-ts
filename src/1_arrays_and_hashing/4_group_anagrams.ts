@@ -1,4 +1,5 @@
 // https://leetcode.cn/problems/group-anagrams/
+
 export function groupAnagrams(strs: string[]): string[][] {
   const map = new Map<string, string[]>();
   for (let i = 0; i < strs.length; i++) {

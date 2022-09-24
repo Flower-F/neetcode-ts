@@ -1,3 +1,5 @@
+// https://leetcode.cn/problems/product-of-array-except-self/
+
 export function productExceptSelf(nums: number[]): number[] {
   const n = nums.length;
 

@@ -4,3 +4,4 @@ export * from './3_two_sum';
 export * from './4_group_anagrams';
 export * from './5_top_k_frequent_elements';
 export * from './6_product_of_array_except_self';
+export * from './7_valid_sudoku';
